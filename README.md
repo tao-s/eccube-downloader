@@ -14,6 +14,7 @@ Then, access to that PHP script on browser.
 * [さくらのレンタルサーバ スタンダード](https://www.sakura.ne.jp/)
 * [xServer](https://www.xserver.ne.jp/)
 
+---
 
 Copyright 2018 XROSS CUBE, Inc.
 
@@ -21,5 +22,5 @@ This script is free to re-distribute as long as you keep this copyright notice.
 Personal use is permitted.
 However the copyrighter holds no responsibility against any damages caused by using this script.
 
-コピーライト以外の改変、再配布OK。個人利用の範囲で自由に使ってOKです。ECサイト開発者の方やネットショップオーナーの方が車内で使うのもOK。
+コピーライト以外の改変、再配布OK。個人利用の範囲で自由に使ってOKです。ECサイト開発者の方やネットショップオーナーの方が業務で使うのもOK。
 その代わり当方では一切責任を負いません。
