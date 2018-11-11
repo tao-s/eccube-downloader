@@ -51,7 +51,36 @@ foreach($accept_lang as $l){
     }
 }
 
-if(isset($_GET["step"])){
+$env = true;
+$error = "";
+if( strpos(phpversion(), "7.") !== 0 || strpos(phpversion(), "7.0") === 0 )
+{
+    $env = false;
+    $error .= "PHPはVersion.".phpversion()."を利用していますが、7.2以降が必要です。"; 
+}
+if(!phpversion("pdo") 
+    || !phpversion("phar") 
+    || !phpversion("mbstring") 
+    || !phpversion("zlib") 
+    || !phpversion("ctype") 
+    || !phpversion("session") 
+    || !phpversion("JSON") 
+    || !phpversion("xml") 
+    || !phpversion("libxml")
+    || !phpversion("OpenSSL")
+    || !phpversion("zip")
+    || !phpversion("cURL")
+    || !phpversion("fileinfo")
+    || !phpversion("intl")
+)
+{
+    $env = false;
+    $error .= "PHPの必須モジュールが不足しています。"; 
+
+}
+
+
+if(isset($_GET["step"]) && $env){
     switch($_GET["step"]){
         case 1:
             $rfp = fopen(SRC_URL, "r");
@@ -182,7 +211,11 @@ h1{
 <h1>EC-CUBE Downloader</h1>
 <p id="version">For <?php echo VERSION; ?></p>
 <p><?php echo $messages[$lang][0]; ?></p>
+<?php if($env){ ?>
 <div><a href="#" class="btn start"><?php echo $messages[$lang][1]; ?></a></div>
+<?php }else{ ?>
+<p class="error"><?php echo $error; ?></p>
+<?php } ?>
 <p class="step step1"><?php echo $messages[$lang][2]; ?></p>
 <p class="step step2"><?php echo $messages[$lang][3]; ?></p>
 <p class="step step3"><?php echo $messages[$lang][4]; ?></p>
