@@ -27,7 +27,7 @@ $messages = array(
         "ダウンロード、展開しました。",
         "ダウンロード、展開に失敗しました。",
         'インストール画面にジャンプします。\nこのファイルは必ず削除してください。',
-        "PHPはVer.".phpversion()."を利用していますが、7.2以降が必要です。",
+        "PHPはVer.".phpversion()."を利用していますが、7.1.3以降が必要です。",
         "PHPの必須モジュール「%s」が有効になっていません。サーバの設定を確認してください。"
     ),
     "en" => array(
@@ -38,7 +38,7 @@ $messages = array(
         "Done!",
         "Oops! Sorry, I couldn't complete the process.",
         'Jump to the install page. \n- Please remove this file -',
-        "You use PHP Ver.".phpversion().", require PHP Ver.7.1 later.",
+        "You use PHP Ver.".phpversion().", require PHP Ver.7.1.3 or later.",
         "Required PHP module '%s' is not enabled. Please check server configuration.",
     )
     //Add translated messages if you want to print your language messages.
