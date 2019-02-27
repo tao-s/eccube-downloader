@@ -13,10 +13,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://downloads.ec-cube.net/src/eccube-4.0.1.zip");
-define("VERSION","Ver. 4.0.1");
-define("FILENAME","./eccube-4.0.1.zip");
-define("DIRNAME","./eccube-4.0.1");
+define("SRC_URL","http://downloads.ec-cube.net/src/eccube-4.0.2.zip");
+define("VERSION","Ver. 4.0.2");
+define("FILENAME","./eccube-4.0.2.zip");
+define("DIRNAME","./eccube-4.0.2");
 
 $messages = array(
     "ja" => array(
