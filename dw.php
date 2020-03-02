@@ -13,10 +13,10 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","http://downloads.ec-cube.net/src/eccube-4.0.3.zip");
-define("VERSION","Ver. 4.0.3");
-define("FILENAME","./eccube-4.0.3.zip");
-define("DIRNAME","./eccube-4.0.3");
+define("SRC_URL","https://github.com/EC-CUBE/ec-cube/archive/experimental/api.zip");
+define("VERSION","Ver. API Beta");
+define("FILENAME","./ec-cube-experimental-api.zip");
+define("DIRNAME","./ec-cube-experimental-api");
 
 $messages = array(
     "ja" => array(
@@ -28,7 +28,8 @@ $messages = array(
         "ダウンロード、展開に失敗しました。",
         'インストール画面にジャンプします。\nこのファイルは必ず削除してください。',
         "PHPはVer.".phpversion()."を利用していますが、7.1.3以降が必要です。",
-        "PHPの必須モジュール「%s」が有効になっていません。サーバの設定を確認してください。"
+        "PHPの必須モジュール「%s」が有効になっていません。サーバの設定を確認してください。",
+	"composer installを実行中",
     ),
     "en" => array(
         "This program will download & deploy EC-CUBE ".VERSION." in this directory.",
@@ -125,6 +126,7 @@ if(isset($_GET["step"]) && $env){
     					}
                         exec("rm -rf ./".DIRNAME);
                         exec("rm ./".FILENAME);
+			exec("composer install");
     				}
     			} catch(Exception $e) {
     			    echo json_encode(0);
