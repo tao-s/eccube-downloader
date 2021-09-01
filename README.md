@@ -17,7 +17,7 @@ Then, access to that PHP script on browser.
 
 ---
 
-Copyright 2018 [XROSS CUBE, Inc.](https://www.xross-cube.com/)
+Copyright 2021 [XROSS CUBE, Inc.](https://www.xross-cube.com/)
 
 This script is free to re-distribute as long as you keep this copyright notice.
 Personal use is permitted.
