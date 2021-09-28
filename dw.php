@@ -13,7 +13,7 @@
  * コピーライト以外の改変、再配布OK。個人利用の範囲で勝手に使ってOKです。
  * その代わり当方では一切責任を負いません。
  */
-define("SRC_URL","https://github.com/EC-CUBE/ec-cube/releases/download/4.1.0/eccube-4.1.0.zip");
+define("SRC_URL","https://downloads.ec-cube.net/src/eccube-4.1.0.zip");
 define("VERSION","Ver. 4.1.0");
 define("FILENAME","./eccube-4.1.0.zip");
 define("DIRNAME","./eccube-4.1.0");
